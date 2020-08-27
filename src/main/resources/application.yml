@@ -1,0 +1,18 @@
+spring:
+  redis:
+    host: localhost
+    password:
+  cache:
+    type: redis
+    redis:
+      cache-null-values: false
+  #    time-to-live:
+  #    cache-names: c1, c2
+
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          redis: debug
+
